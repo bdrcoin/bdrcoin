@@ -1,0 +1,2 @@
+usr/local/bin/bdrcoind usr/bin
+usr/local/bin/bdrcoin-cli usr/bin

@@ -1,0 +1,11 @@
+[Protocol]
+exec=bdrcoin-qt '%u'
+protocol=bdrcoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

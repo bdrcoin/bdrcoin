@@ -1,0 +1,26 @@
+# /etc/conf.d/bdrcoind: config file for /etc/init.d/bdrcoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/bdrcoin/bdrcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/bdrcoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/bdrcoind.pid"
+
+# Where to write bdrcoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/bdrcoind"
+
+# User and group to own bdrcoind process
+#BITCOIND_USER="bdrcoin"
+#BITCOIND_GROUP="bdrcoin"
+
+# Path to bdrcoind executable
+#BITCOIND_BIN="/usr/bin/bdrcoind"
+
+# Nice value to run bdrcoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

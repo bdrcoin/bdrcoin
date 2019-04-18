@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BDRcoin
+Comment=BDRcoin P2P Cryptocurrency
+Comment[fr]=BDRcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BDRcoin, eşten eşe kriptografik sanal para birimi
+Exec=bdrcoin-qt %u
+Terminal=false
+Type=Application
+Icon=bdrcoin128
+MimeType=x-scheme-handler/bdrcoin;
+Categories=Office;Finance;

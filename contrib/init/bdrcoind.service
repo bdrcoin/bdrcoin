@@ -1,0 +1,26 @@
+[Unit]
+Description=BDRcoin daemon
+After=network.target
+
+[Service]
+User=bdrcoin
+Group=bdrcoin
+
+Type=forking
+PIDFile=/var/lib/bdrcoind/bdrcoind.pid
+
+ExecStart=/usr/bin/bdrcoind -daemon -pid=/var/lib/bdrcoind/bdrcoind.pid \
+          -conf=/etc/bdrcoin/bdrcoin.conf -datadir=/var/lib/bdrcoind
+
+ExecStop=-/usr/bin/bdrcoin-cli -conf=/etc/bdrcoin/bdrcoin.conf \
+         -datadir=/var/lib/bdrcoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
